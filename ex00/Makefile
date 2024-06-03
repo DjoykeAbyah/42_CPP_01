@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/05/28 22:46:08 by djoyke        ########   odam.nl          #
+#    Updated: 2024/06/03 14:37:51 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,10 @@ CPPFLAGS	= -Wall -Wextra -g -fsanitize=address
 
 #sources
 SRC 		= 	main.cpp		\
+				Zombie.cpp		\
+				randomChump.cpp	\
+				newZombie.cpp	\
+				
 
 #object files
 OBJDIR 		= obj
