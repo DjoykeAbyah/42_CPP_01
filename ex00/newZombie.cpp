@@ -6,7 +6,7 @@
 /*   By: djoyke <djoyke@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/28 22:48:04 by djoyke        #+#    #+#                 */
-/*   Updated: 2024/06/03 14:42:48 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/03 17:01:45 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 /**
  * allocated on the heap Zombie
+ * new allocates on the heap
 */
 Zombie* newZombie(std::string name)
 {

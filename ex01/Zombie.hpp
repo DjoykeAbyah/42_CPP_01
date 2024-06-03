@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/03 16:31:52 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/03 16:58:04 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/03 18:30:19 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@
 class Zombie
 {
 	private:
-		std::string _name = "Horde Leader";
+		std::string _name;
 
 	public:
 		Zombie(void);
-		Zombie(std::string givenName);
 		~Zombie(void);
+
+		void setName(const std::string& givenName);
+		void announce(void);
 };
 
 Zombie* zombieHorde(int N, std::string name);

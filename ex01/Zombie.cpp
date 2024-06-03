@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/03 16:31:46 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/03 16:56:38 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/03 18:35:18 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,7 @@
 
 Zombie::Zombie(void)
 {
-	std::cout << Zombie::_name << ": default constructor called" << std::endl;
-	return ;
-}
-
-Zombie::Zombie(std::string givenName) : _name(givenName)
-{
-	std::cout << Zombie::_name << "constructor called" << std::endl;
+	std::cout << Zombie::_name << "default constructor called" << std::endl;
 	return ;
 }
 
@@ -29,4 +23,14 @@ Zombie::~Zombie(void)
 {
 	std::cout << Zombie::_name << ": destroyed" << std::endl;
 	return ;
+}
+
+void Zombie::setName(const std::string& givenName)
+{
+	_name = givenName;
+}
+
+void Zombie::announce(void)
+{
+	std::cout << Zombie::_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
