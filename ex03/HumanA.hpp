@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/03 18:52:49 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/03 19:08:50 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/03 19:27:09 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ class HumanA
 		~HumanA();
 		
 		void attack();
-}
+};
 	
 #endif
