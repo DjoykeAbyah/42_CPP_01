@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/03 18:52:46 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/04 15:36:12 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/04 18:13:43 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,8 @@ HumanA::~HumanA()
 
 }
 
-/**
- * _weapon.getType() that's how you call a function on a variable??? look it up!!
-*/
 void HumanA::attack() const
 {
-	std::cout << _name << " attacks with their" << _weapon.getType() << std::endl;
+	std::cout << _name << " attacks with their " << _weapon.getType() << std::endl;
 	return ;
 }

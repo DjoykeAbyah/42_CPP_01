@@ -6,12 +6,12 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/04 18:07:34 by dreijans      ########   odam.nl          #
+#    Updated: 2024/06/04 18:15:31 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
 #executable
-NAME 		= Violence
+NAME 		= Loser
 
 #compiler + flags
 CC			= c++
@@ -19,10 +19,7 @@ CPPFLAGS	= -Wall -Wextra -g -fsanitize=address
 
 #sources
 SRC 		= 	main.cpp		\
-				Weapon.cpp		\
-				HumanA.cpp		\
-				HumanB.cpp				
-
+				
 #object files
 OBJDIR 		= obj
 OBJ			= $(addprefix $(OBJDIR)/, $(notdir $(SRC:.cpp=.o)))
@@ -37,7 +34,6 @@ PURPLE		:= \033[1;95m
 CYAN		:= \033[1;96m
 WHITE		:= \033[1;97m
 BLACK		:= \033[1;90m
-
 
 #targets
 all:	$(NAME)
@@ -56,7 +52,7 @@ clean:
 
 fclean: clean
 	@ rm -f $(NAME)
-	@ echo "${YELLOW}Let's talk it out!${DONE}"
+	@ echo "${YELLOW}Zombie out!${DONE}"
 
 re:	fclean all
 
