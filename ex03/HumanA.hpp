@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/03 18:52:49 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/03 19:27:09 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/04 15:35:21 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,14 @@
 class HumanA
 {
 	private:
-		Weapon _weapon;
+		Weapon& _weapon; //reference always has the same address, if get's reassignes it changes everything!
 		std::string _name;
 		
 	public:
-		HumanA();//takes weapon in constructor
+		HumanA(std::string givenName, Weapon& givenWeapon);//takes name and weapon in constructor
 		~HumanA();
 		
-		void attack();
+		void attack() const;//why const?
 };
 	
 #endif

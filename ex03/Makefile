@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/03 18:51:30 by dreijans      ########   odam.nl          #
+#    Updated: 2024/06/04 15:40:54 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ CPPFLAGS	= -Wall -Wextra -g -fsanitize=address
 SRC 		= 	main.cpp		\
 				Weapon.cpp		\
 				HumanA.cpp		\
-				HumanB.cpp		\			
+				HumanB.cpp				
 
 #object files
 OBJDIR 		= obj
