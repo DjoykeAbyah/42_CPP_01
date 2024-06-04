@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   main.cpp                                           :+:    :+:            */
+/*   sed.hpp                                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2024/06/04 18:16:12 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/04 19:58:30 by dreijans      ########   odam.nl         */
+/*   Created: 2024/06/04 20:01:06 by dreijans      #+#    #+#                 */
+/*   Updated: 2024/06/04 20:01:32 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
-#include <fstream>
-#include <string>
+#ifndef SED_HPP
+# define SED_HPP
 
-int main()
-{
-	return 0;
-}
+
+
+#endif

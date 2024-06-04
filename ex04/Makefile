@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/04 18:15:31 by dreijans      ########   odam.nl          #
+#    Updated: 2024/06/04 20:00:40 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,7 @@ CPPFLAGS	= -Wall -Wextra -g -fsanitize=address
 
 #sources
 SRC 		= 	main.cpp		\
+				sed.cpp
 				
 #object files
 OBJDIR 		= obj
