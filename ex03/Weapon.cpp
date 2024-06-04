@@ -6,14 +6,14 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/03 18:53:00 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/04 15:21:43 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/04 19:32:56 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Weapon.hpp"
 
-Weapon::Weapon(const std::string& givenType) : _type(givenType) //what does this line do?
+Weapon::Weapon(const std::string& givenType) : _type(givenType)
 {
 	std::cout << "weapon constructor called" << std::endl;
 	return ;
