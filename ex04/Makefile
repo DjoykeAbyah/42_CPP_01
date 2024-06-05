@@ -6,7 +6,7 @@
 #    By: dreijans <dreijans@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2024/01/17 22:21:56 by dreijans      #+#    #+#                  #
-#    Updated: 2024/06/04 20:00:40 by dreijans      ########   odam.nl          #
+#    Updated: 2024/06/05 16:09:50 by dreijans      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,6 +53,7 @@ clean:
 
 fclean: clean
 	@ rm -f $(NAME)
+	@ rm -f output.txt
 	@ echo "${YELLOW}Zombie out!${DONE}"
 
 re:	fclean all
