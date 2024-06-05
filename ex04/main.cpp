@@ -6,7 +6,7 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/04 18:16:12 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/05 16:18:30 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/05 16:20:52 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int main()
 	{
 		size_t position = input.find(word);
 		if (position != std::string::npos)
-			std::cout << "Found the word" << std::endl;
+			std::cout << "Found the word" << std::endl; // not finding all the ocurrences
 		outFile << input << std::endl;
 	}
 	
