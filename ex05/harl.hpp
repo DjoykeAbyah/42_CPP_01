@@ -6,7 +6,7 @@
 /*   By: djoyke <djoyke@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/06 23:02:39 by djoyke        #+#    #+#                 */
-/*   Updated: 2024/06/07 21:19:54 by djoyke        ########   odam.nl         */
+/*   Updated: 2024/06/07 22:28:52 by djoyke        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ twice!
 class Harl
 {
     private:
-        void debug(void);
-        void info(void);
-        void warning(void);
-        void error(void);
+        void debug();
+        void info();
+        void warning();
+        void error();
     
     public:
         Harl();

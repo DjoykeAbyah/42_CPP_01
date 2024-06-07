@@ -6,7 +6,7 @@
 /*   By: djoyke <djoyke@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/06 23:04:10 by djoyke        #+#    #+#                 */
-/*   Updated: 2024/06/07 21:31:31 by djoyke        ########   odam.nl         */
+/*   Updated: 2024/06/07 22:46:52 by djoyke        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Harl::Harl()
 {
-    std::cout << "right on time ... as always..Harl" << std::endl;
+    std::cout << "sigh...right on time as always Harl" << std::endl;
 }
 
 Harl::~Harl()
@@ -42,4 +42,36 @@ void Harl::warning(void)
 void Harl::error(void)
 {
     std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
+}
+
+/**
+ * public member function that calls the four member functions above
+ */
+void Harl::complain(std::string level)
+{
+    void (Harl::*functionArray[4])() =
+    {
+        &Harl::debug,
+        &Harl::info,
+        &Harl::warning,
+        &Harl::error
+    };
+
+    std::string options[4] = 
+    {
+        "DEBUG",
+        "INFO",
+        "WARNING",
+        "ERROR"
+    };
+
+    for (int i = 0; i < 4; i++)
+    {
+        if (options[i] == level)
+        {
+            (this->*functionArray[i])();
+            return ;
+        }  
+    }
+    std::cout << "no valid option" << std::endl;
 }
