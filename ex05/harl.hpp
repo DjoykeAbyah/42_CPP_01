@@ -6,12 +6,14 @@
 /*   By: djoyke <djoyke@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/06 23:02:39 by djoyke        #+#    #+#                 */
-/*   Updated: 2024/06/06 23:09:03 by djoyke        ########   odam.nl         */
+/*   Updated: 2024/06/07 21:19:54 by djoyke        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef HARL_H
 # define HARL_H
+
+#include <iostream>
 
 /**
  * The goal of this exercise is to use pointers to member functions. This is not a
@@ -27,6 +29,8 @@ class Harl
         void error(void);
     
     public:
+        Harl();
+        ~Harl();
         void complain(std::string level);
 };
 

@@ -6,7 +6,15 @@
 /*   By: djoyke <djoyke@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/06 23:02:43 by djoyke        #+#    #+#                 */
-/*   Updated: 2024/06/06 23:02:44 by djoyke        ########   odam.nl         */
+/*   Updated: 2024/06/07 21:32:52 by djoyke        ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <iostream>
+#include "harl.hpp"
+
+int main()
+{
+    Harl harl;
+    return 0;
+}
