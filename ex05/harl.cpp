@@ -6,7 +6,7 @@
 /*   By: djoyke <djoyke@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/06 23:04:10 by djoyke        #+#    #+#                 */
-/*   Updated: 2024/06/07 23:05:36 by djoyke        ########   odam.nl         */
+/*   Updated: 2024/06/08 15:36:32 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Harl::Harl()
 {
-    std::cout << "sigh...right on time as always Harl" << std::endl;
+    std::cout << "sigh...right on time as always, Harl" << std::endl;
 }
 
 Harl::~Harl()
