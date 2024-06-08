@@ -6,7 +6,7 @@
 /*   By: djoyke <djoyke@student.codam.nl>             +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/05/28 22:48:15 by djoyke        #+#    #+#                 */
-/*   Updated: 2024/06/03 16:35:58 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/08 15:17:38 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,16 @@
 class Zombie
 {
 	private:
-		std::string _name = "Nameless wierdo"; //member attribute
+		//member attribute
+		std::string _name = "Nameless wierdo";
 	
 	public:
 		Zombie(void);
 		Zombie(std::string givenName);
 		~Zombie(void);
 		
-		void announce(void); //member function
+		//member function
+		void announce(void);
 };
 
 Zombie* newZombie(std::string name);

@@ -6,14 +6,17 @@
 /*   By: dreijans <dreijans@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/06/03 18:52:51 by dreijans      #+#    #+#                 */
-/*   Updated: 2024/06/04 18:08:53 by dreijans      ########   odam.nl         */
+/*   Updated: 2024/06/08 15:30:36 by dreijans      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "HumanB.hpp"
 
-HumanB::HumanB(const std::string& givenName) : _name(givenName)
+/**
+ * In the constructor of HumanB, initialize _weapon to nullptr to ensure it is not a dangling pointer
+ */
+HumanB::HumanB(const std::string& givenName) : _name(givenName), _weapon(nullptr)
 {
 	std::cout << _name << ": constructor called" << std::endl;
 
